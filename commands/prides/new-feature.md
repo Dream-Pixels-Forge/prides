@@ -12,31 +12,31 @@ Coordinate the complete feature development lifecycle through the Prides multi-a
 
 ### Phase 1: Planning & Requirements
 
-1. **Idea Agent**: Brainstorm and refine the feature concept
-2. **PRD Doc Agent**: Generate product requirements document
-3. **Tasks Agent**: Break down into actionable tasks
-4. **Git Master Agent**: Create feature branch
+1. Delegate to **idea-sagent** Subagents to brainstorm and refine the feature concept
+2. Delegate to **prd-doc-sagent** Subagents to generate product requirements document
+3. Delegate to **tasks-sagent** Subagents to break down into actionable tasks
+4. Delegate to **git-master-sagent** Subagents to create feature branch
 
 ### Phase 2: Design & Prototyping
 
-1. **UI/UX Agent**: Design specification and user experience
-2. **Prototyper Agent**: Create visual prototype (Stitch integration)
+1. Delegate to **ui-ux-sagent** Subagents for design specification and user experience
+2. Delegate to **prototyper-sagent** Subagents to create visual prototype (Stitch integration)
 
 ### Phase 3: Implementation
 
-1. **Coder Agent**: Implement the feature
-2. **Lint Agent**: Code quality check (apply auto-fixes)
-3. **Critic Agent**: Deep code review for issues
+1. Delegate to **coder-sagent** Subagents to implement the feature
+2. Delegate to **lint-sagent** Subagents for code quality check
+3. Delegate to **critic-sagent** Subagents for deep code review
 
 ### Phase 4: Quality Assurance
 
-1. **Testing Agent**: Run tests
-2. **Performance Agent**: Performance validation
-3. **Accessibility Agent**: WCAG compliance check
+1. Delegate to **testing-sagent** Subagents to run tests
+2. Delegate to **performance-sagent** Subagents for performance validation
+3. Delegate to **accessibility-sagent** Subagents for WCAG compliance check
 
 ### Phase 5: Deployment
 
-1. **Deployment Agent**: Execute deployment strategy
+1. Delegate to **deployment-sagent** Subagents to execute deployment strategy
 
 ## Quality Gates
 

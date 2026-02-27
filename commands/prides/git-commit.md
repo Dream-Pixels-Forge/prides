@@ -19,11 +19,11 @@ Use the provided message and ensure it follows conventional commit format:
 - `chore:` for maintenance
 
 ### If no commit message is provided:
-1. **Git Master Agent**: Analyze staged changes and generate commit message
+1. Delegate to **git-master-sagent** Subagents to analyze staged changes and generate commit message
 
 ### Pre-Commit Checks
 Before committing, ensure:
-1. **Lint Agent**: Code passes all linting rules
+1. Delegate to **lint-sagent** Subagents: Code passes all linting rules
 2. **Type Check**: TypeScript/types pass validation
 
 ### Commit Execution

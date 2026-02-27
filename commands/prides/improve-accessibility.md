@@ -22,7 +22,7 @@ Execute comprehensive accessibility audit and improvements to meet WCAG 2.1 AA s
 
 ### Phase 1: Accessibility Audit
 
-1. **Accessibility Agent**: Initial audit
+1. Delegate to **accessibility-sagent** Subagents for initial audit
    - Run automated accessibility tests
    - Generate accessibility report
    - Identify violations by severity
@@ -120,7 +120,7 @@ Execute comprehensive accessibility audit and improvements to meet WCAG 2.1 AA s
 
 ### Phase 4: Validation
 
-1. **Accessibility Agent**: Re-run audit
+1. Delegate to **accessibility-sagent** Subagents to re-run audit
    - Verify fixes
    - Check for new issues
    - Validate WCAG compliance
@@ -145,7 +145,7 @@ Execute comprehensive accessibility audit and improvements to meet WCAG 2.1 AA s
 
 ### Documentation
 
-1. **Documentation Agent**: Accessibility documentation
+1. Delegate to **documentation-sagent** Subagents for accessibility documentation
 
 ## Output
 

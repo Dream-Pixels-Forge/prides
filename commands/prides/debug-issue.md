@@ -12,7 +12,7 @@ Execute systematic debugging and diagnosis to identify root cause and implement 
 
 ### Phase 1: Issue Analysis
 
-1. **Debugger Agent**: Initial issue assessment
+1. Delegate to **debugger-sagent** Subagents for initial issue assessment
    - Reproduce the issue (if possible)
    - Collect error messages and stack traces
    - Identify affected components
@@ -26,7 +26,7 @@ Execute systematic debugging and diagnosis to identify root cause and implement 
 
 ### Phase 2: Root Cause Analysis
 
-1. **Debugger Agent**: Deep dive analysis
+1. Delegate to **debugger-sagent** Subagents for deep dive analysis
    - Trace execution flow
    - Identify failing code paths
    - Check for race conditions
@@ -41,16 +41,16 @@ Execute systematic debugging and diagnosis to identify root cause and implement 
 
 ### Phase 3: Fix Implementation
 
-1. **Debugger Agent**: Propose fix strategy
+1. Delegate to **debugger-sagent** Subagents to propose fix strategy
    - Immediate workaround (if needed)
    - Proper long-term fix
    - Risk assessment
 
-2. **Coder Agent**: Implement fix
+2. Delegate to **coder-sagent** Subagents to implement fix
 
 ### Phase 4: Validation
 
-1. **Testing Agent**: Run regression tests
+1. Delegate to **testing-sagent** Subagents to run regression tests
    - Test the specific issue
    - Run related test suites
    - Verify no regressions
@@ -67,7 +67,7 @@ Execute systematic debugging and diagnosis to identify root cause and implement 
 
 ### Documentation
 
-1. **Documentation Agent**: Create bug report
+1. Delegate to **documentation-sagent** Subagents to create bug report
 
 ## Output
 

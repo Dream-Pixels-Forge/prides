@@ -60,8 +60,8 @@ Execute the appropriate test suites based on the specified scope:
 - Screen reader compatibility
 
 ### Post-Test Actions
-1. **Testing Agent**: Aggregate all test results
-2. **Documentation Agent**: Update test coverage docs
+1. Delegate to **testing-sagent** Subagents to aggregate all test results
+2. Delegate to **documentation-sagent** Subagents to update test coverage docs
 
 ### Quality Gates
 

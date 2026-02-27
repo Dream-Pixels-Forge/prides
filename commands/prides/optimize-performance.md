@@ -22,7 +22,7 @@ Execute comprehensive performance analysis and optimization.
 
 ### Phase 1: Performance Audit
 
-1. **Performance Agent**: Initial audit
+1. Delegate to **performance-sagent** Subagents for initial audit
    - Run Lighthouse audit
    - Measure Core Web Vitals
    - Identify performance issues
@@ -67,7 +67,7 @@ Execute comprehensive performance analysis and optimization.
 
 ### Phase 3: Optimization Implementation
 
-1. **Performance Agent**: Prioritize optimizations
+1. Delegate to **performance-sagent** Subagents to prioritize optimizations
    - Impact vs. effort matrix
    - Quick wins first
    - Address critical issues
@@ -103,7 +103,7 @@ Execute comprehensive performance analysis and optimization.
 
 ### Phase 4: Validation
 
-1. **Performance Agent**: Re-run audits
+1. Delegate to **performance-sagent** Subagents to re-run audits
    - Compare against baseline
    - Verify improvements
    - Check for regressions
@@ -120,7 +120,7 @@ Execute comprehensive performance analysis and optimization.
 
 ### Documentation
 
-1. **Documentation Agent**: Update performance docs
+1. Delegate to **documentation-sagent** Subagents to update performance docs
 
 ## Output
 

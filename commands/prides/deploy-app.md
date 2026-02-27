@@ -23,7 +23,7 @@ Execute deployment to the specified environment following the zero-downtime depl
 **ALL gates must pass before deployment:**
 
 1. **Code Quality Gate**
-   - Lint Agent: All linting passes
+   - Delegate to **lint-sagent** Subagents: All linting passes
    - Type check: No type errors
 
 2. **Testing Gate**
@@ -32,24 +32,24 @@ Execute deployment to the specified environment following the zero-downtime depl
    - E2E tests: Critical paths pass
 
 3. **Security Gate**
-   - Security Agent: Zero critical vulnerabilities
+   - Delegate to **security-sagent** Subagents: Zero critical vulnerabilities
    - Dependency scan: No known vulnerabilities
    - Secrets scan: No exposed secrets
 
 4. **Performance Gate**
-   - Performance Agent: No regressions
+   - Delegate to **performance-sagent** Subagents: No regressions
    - Load test: Meets requirements
    - Bundle size: Within limits
 
 5. **Accessibility Gate**
-   - Accessibility Agent: WCAG 2.1 AA compliant
+   - Delegate to **accessibility-sagent** Subagents: WCAG 2.1 AA compliant
    - No critical violations
 
 ### Deployment Strategy
 
 #### For Production:
-1. **Deployment Agent**: Create deployment plan and deploy
-2. **Monitoring Agent**: Real-time health monitoring
+1. Delegate to **deployment-sagent** Subagents to create deployment plan and deploy
+2. Delegate to **monitoring-sagent** Subagents for real-time health monitoring
 
 #### For Staging:
 1. Build and deploy to staging
@@ -90,8 +90,8 @@ Execute deployment to the specified environment following the zero-downtime depl
 
 ### Post-Deployment
 
-1. **Monitoring Agent**: Continuous monitoring (24h)
-2. **Documentation Agent**: Update deployment logs
+1. Delegate to **monitoring-sagent** Subagents for continuous monitoring (24h)
+2. Delegate to **documentation-sagent** Subagents to update deployment logs
 
 ## Output
 

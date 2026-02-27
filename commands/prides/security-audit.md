@@ -20,7 +20,7 @@ Execute comprehensive security audit following OWASP standards and industry best
 
 ### Phase 1: Automated Scanning
 
-1. **Security Agent**: Run automated scans
+1. Delegate to **security-sagent** Subagents to run automated scans
 
 **Dependency Scan:**
 - Check for known vulnerabilities (npm audit, pip audit)
@@ -91,7 +91,7 @@ Execute comprehensive security audit following OWASP standards and industry best
 
 ### Phase 4: Threat Modeling
 
-1. **Security Agent**: Identify threats
+1. Delegate to **security-sagent** Subagents to identify threats
    - Asset identification
    - Trust boundaries
    - Threat enumeration (STRIDE)
@@ -99,7 +99,7 @@ Execute comprehensive security audit following OWASP standards and industry best
 
 ### Phase 5: Remediation
 
-1. **Security Agent**: Prioritize fixes
+1. Delegate to **security-sagent** Subagents to prioritize fixes
    - Critical: Fix immediately
    - High: Fix within 24h
    - Medium: Fix within 1 week
@@ -131,7 +131,7 @@ Execute comprehensive security audit following OWASP standards and industry best
 
 ### Documentation
 
-1. **Documentation Agent**: Security documentation
+1. Delegate to **documentation-sagent** Subagents for security documentation
 
 ## Output
 
