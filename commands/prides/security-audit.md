@@ -1,4 +1,5 @@
 ---
+name: security-audit
 description: Perform comprehensive security audit including vulnerability scanning, threat analysis, and security best practices validation. Use {{args}} to specify audit scope (quick, full, compliance).
 ---
 

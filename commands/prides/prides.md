@@ -1,4 +1,5 @@
 ---
+name: prides
 description: Create a complete feature implementation from requirements to deployment. Use {{args}} to specify the feature request.
 ---
 

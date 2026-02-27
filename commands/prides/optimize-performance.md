@@ -1,4 +1,5 @@
 ---
+name: optimize-performance
 description: Analyze and optimize application performance including profiling, bottleneck detection, and regression prevention. Use {{args}} to specify focus area (load, runtime, bundle, memory, all).
 ---
 

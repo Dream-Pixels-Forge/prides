@@ -1,4 +1,5 @@
 ---
+name: debug-issue
 description: Debug and diagnose issues with root cause analysis and fix recommendations. Use {{args}} to describe the issue or provide error messages/logs.
 ---
 

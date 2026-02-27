@@ -1,4 +1,5 @@
 ---
+name: run-tests
 description: Run comprehensive test suites including unit, integration, E2E, security, performance, and accessibility tests. Use {{args}} to specify test scope (e.g., "unit", "integration", "e2e", "all", or specific file path).
 ---
 

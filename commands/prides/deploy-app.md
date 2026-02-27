@@ -1,4 +1,5 @@
 ---
+name: deploy-app
 description: Deploy application to specified environment with zero-downtime strategy. Use {{args}} to specify environment (development, staging, production) or leave empty for interactive selection.
 ---
 

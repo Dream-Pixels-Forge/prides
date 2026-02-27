@@ -1,4 +1,5 @@
 ---
+name: generate-docs
 description: Generate comprehensive technical documentation including API docs, README, component docs, and user guides. Use {{args}} to specify documentation type or scope.
 ---
 

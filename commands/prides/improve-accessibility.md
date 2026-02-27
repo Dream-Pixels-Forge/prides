@@ -1,4 +1,5 @@
 ---
+name: improve-accessibility
 description: Improve accessibility to meet WCAG 2.1 AA standards. Use {{args}} to specify focus area (keyboard, screen-reader, color, forms, all).
 ---
 

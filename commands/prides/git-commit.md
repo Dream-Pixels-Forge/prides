@@ -1,4 +1,5 @@
 ---
+name: git-commit
 description: Commit staged changes with intelligent commit message generation. Use {{args}} for optional commit message or leave empty for auto-generation.
 ---
 
