@@ -1,0 +1,6 @@
+{
+  "name": "prides",
+  "version": "0.1.1",
+  "contextFileName": "QWEN.md",
+  "commands": "commands/prides"
+}

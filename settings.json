@@ -1,0 +1,158 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\VotreNom\\Documents\\Projets"
+      ],
+      "cwd": "./mcp-servers/filesystem",
+      "env": {},
+      "timeout": 10000
+    },
+    "github": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "cwd": "./mcp-servers/github",
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "timeout": 30000
+    },
+    "brave-search": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "cwd": "./mcp-servers/brave-search",
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_SEARCH_API_KEY}"
+      },
+      "timeout": 15000
+    },
+    "puppeteer": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "cwd": "./mcp-servers/puppeteer",
+      "env": {},
+      "timeout": 60000
+    },
+    "playwright": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-playwright"
+      ],
+      "cwd": "./mcp-servers/playwright",
+      "env": {},
+      "timeout": 60000
+    },
+    "chrome-dev-tools": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-chrome-dev-tools"
+      ],
+      "cwd": "./mcp-servers/chrome-dev",
+      "env": {
+        "CHROME_PATH": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      "timeout": 30000
+    },
+    "blender-3d": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp_server_blender"
+      ],
+      "cwd": "./mcp-servers/blender",
+      "env": {
+        "BLENDER_PATH": "C:\\Program Files\\Blender Foundation\\Blender 4.0\\blender.exe"
+      },
+      "timeout": 60000
+    },
+    "nuke-compositing": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp_server_nuke"
+      ],
+      "cwd": "./mcp-servers/nuke",
+      "env": {
+        "NUKE_PYTHON": "C:\\Program Files\\Nuke15.0v1\\python.exe"
+      },
+      "timeout": 30000
+    },
+    "ffmpeg-vfx": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@mcp-servers/ffmpeg"
+      ],
+      "cwd": "./mcp-servers/ffmpeg",
+      "env": {
+        "PATH": "%PATH%;C:\\ffmpeg\\bin"
+      },
+      "timeout": 120000
+    },
+    "three-js-gen": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "mcp-threejs-helper"
+      ],
+      "cwd": "./mcp-servers/threejs",
+      "env": {},
+      "timeout": 30000
+    },
+    "memory": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "cwd": "./mcp-servers/memory",
+      "env": {},
+      "timeout": 10000
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ],
+      "cwd": "./mcp-servers/fetch",
+      "env": {},
+      "timeout": 20000
+    },
+    "notion": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-notion"
+      ],
+      "cwd": "./mcp-servers/notion",
+      "env": {
+        "NOTION_API_TOKEN": "${NOTION_API_TOKEN}"
+      },
+      "timeout": 20000
+    },
+    "image-editing": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-image-editor"
+      ],
+      "cwd": "./mcp-servers/images",
+      "env": {},
+      "timeout": 45000
+    }
+  }
+}
