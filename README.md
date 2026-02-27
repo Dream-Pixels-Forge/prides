@@ -149,7 +149,7 @@ qwen prides verify-accuracy
 
 ## Architecture
 
-### Agent Ecosystem (26 Agents)
+### Agent Ecosystem (26+ Agents)
 
 ```
 Prides Agent (Central Orchestrator)
