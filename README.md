@@ -14,7 +14,7 @@ The Prides extension provides a complete ecosystem of specialized agents for the
 
 - **26+ Specialized Agents** - Web dev, 3D/VFX, motion graphics, game dev, post-production
 - **33+ Specialized Skills** - Domain expertise on demand
-- **7 MCP Servers** - Direct tool integration
+- **10 MCP Servers** - Direct tool integration
 - **Multi-Domain Support** - Web, 3D, VFX, games, video, design
 - **Skills Integration** - Leverage specialized knowledge per task
 - **MCP Integration** - Direct filesystem, Git, and tool access
@@ -37,6 +37,7 @@ The Prides extension provides a complete ecosystem of specialized agents for the
 
 | Command | Purpose |
 |---------|---------|
+| `/prides` | Main orchestrator - complete feature development workflow |
 | `/prides:new-feature` | Create complete feature implementation |
 | `/prides:git-commit` | Commit with intelligent message generation |
 | `/prides:run-tests` | Run comprehensive test suites |
@@ -183,17 +184,20 @@ Prides Agent (Central Orchestrator)
 | **Search & Research** | company-search, people-search, financial-report-search, research-paper-search, personal-site-search, x-search |
 | **Utility** | enhance-prompt, find-skills, skill-creator, agentation, ai-video-generation, remotion |
 
-### MCP Servers (7 Configured)
+### MCP Servers (10 Configured)
 
 | Server | Purpose |
 |--------|---------|
 | **filesystem** | File operations (read, write, search) |
-| **git** | Git operations (commit, branch, push, pull) |
-| **shadcn** | shadcn/ui component management |
+| **git** | GitHub operations (commit, branch, PRs, releases) |
+| **brave-search** | Web search via Brave API |
+| **puppeteer** | Browser automation |
 | **playwright** | E2E testing and browser automation |
-| **github** | GitHub operations (PRs, releases) |
-| **netlify** | Netlify deployment (needs API key) |
-| **supabase** | Supabase database (needs credentials) |
+| **chrome-dev-tools** | Chrome DevTools protocol |
+| **memory** | Persistent memory for conversation context |
+| **fetch** | HTTP requests and web fetching |
+| **notion** | Notion workspace integration |
+| **image-editing** | Image editing and manipulation |
 
 The extension orchestrates a comprehensive agent ecosystem:
 
@@ -313,9 +317,22 @@ Call @coder-sagent to implement the following feature request:
 ```json
 {
   "name": "prides",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "contextFileName": "QWEN.md",
-  "commands": "commands/prides"
+  "commands": "commands/prides",
+  "skills": "skills",
+  "agents": "agents",
+  "mcpServers": {
+    "filesystem": { ... },
+    "git": { ... },
+    "brave-search": { ... },
+    "playwright": { ... },
+    "chrome-dev-tools": { ... },
+    "memory": { ... },
+    "fetch": { ... },
+    "notion": { ... },
+    "image-editing": { ... }
+  }
 }
 ```
 
@@ -334,7 +351,7 @@ Skills are automatically available from the `skills/` directory. Invoke them via
 
 ```
 prides/
-├── qwen-extension.json         # Extension configuration (v0.1.1)
+├── qwen-extension.json         # Extension configuration (v0.2.0)
 ├── QWEN.md                    # Context and documentation
 ├── commands/prides/              # Command files (Markdown format)
 │   ├── new-feature.md
@@ -511,6 +528,6 @@ See LICENSE file for details.
 
 ---
 
-**Version:** 0.1.1 | **Agents:** 26 | **Skills:** 33 | **MCP Servers:** 7 | **Last Updated:** 2026-02-27
+**Version:** 0.2.0 | **Agents:** 26 | **Skills:** 33 | **MCP Servers:** 10 | **Last Updated:** 2026-02-27
 
 **Made with ❤️ by Dream Pixels Forge**
