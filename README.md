@@ -351,7 +351,7 @@ Skills are automatically available from the `skills/` directory. Invoke them via
 
 ```
 prides/
-├── qwen-extension.json         # Extension configuration (v0.2.0)
+├── qwen-extension.json         # Extension configuration (v0.2.1)
 ├── QWEN.md                    # Context and documentation
 ├── commands/prides/              # Command files (Markdown format)
 │   ├── new-feature.md
@@ -528,6 +528,6 @@ See LICENSE file for details.
 
 ---
 
-**Version:** 0.2.0 | **Agents:** 26 | **Skills:** 33 | **MCP Servers:** 10 | **Last Updated:** 2026-02-27
+**Version:** 0.2.1 | **Agents:** 26 | **Skills:** 33 | **MCP Servers:** 10 | **Last Updated:** 2026-02-27
 
 **Made with ❤️ by Dream Pixels Forge**
