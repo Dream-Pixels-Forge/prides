@@ -23,7 +23,7 @@ Generate comprehensive technical documentation for the project.
 
 ### Pre-Documentation Analysis
 
-1. Delegate to **documentation-sagent** Subagents to analyze codebase
+1. @documentation-sagent: Analyze codebase
    - Scan source files
    - Identify undocumented components
    - Check documentation drift
@@ -79,7 +79,7 @@ Generate comprehensive technical documentation for the project.
 
 ### Post-Generation
 
-1. Delegate to **documentation-sagent** Subagents to review generated docs
+1. @documentation-sagent: Review generated docs
    - Verify accuracy
    - Check completeness
    - Ensure consistency
