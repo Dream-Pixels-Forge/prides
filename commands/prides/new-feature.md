@@ -10,12 +10,12 @@ description: Start a new feature development workflow. Use {{args}} to specify t
 ## Workflow
 
 1. @idea-sagent: Brainstorm and refine the feature concept
-2. @prd-doc-sagent: Generate product requirements document
+2. @prd-doc-sagent: Generate product requirements document if needed
 3. @tasks-sagent: Break down into actionable tasks
 4. @git-master-sagent: Create feature branch
 
-5. @ui-ux-sagent: Design specification and user experience
-6. @prototyper-sagent: Create visual prototype (Stitch integration)
+5. @ui-ux-sagent: Design specification and user experience if needed
+6. @prototyper-sagent: Create visual prototype (Stitch integration) if needed
 
 7. @coder-sagent: Implement the feature
 8. @lint-sagent: Code quality check (apply auto-fixes)
