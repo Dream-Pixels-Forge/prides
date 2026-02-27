@@ -86,12 +86,10 @@ Generate comprehensive technical documentation for the project.
 
 ### Documentation Templates
 
-Use templates from `/templates/documentation/`:
-- `api-reference.md`
-- `component-doc.md`
-- `readme-template.md`
-- `user-guide.md`
-- `architecture.md`
+Use templates from `@templates/`:
+- @templates/api-reference-template.md
+- @templates/component-doc-template.md
+- @templates/readme-template.md
 
 ## Output
 
