@@ -4,5 +4,17 @@
   "contextFileName": "QWEN.md",
   "commands": "commands/prides",
   "skills": "skills",
-  "agents": "agents"
+  "agents": "agents",
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./"],
+      "description": "File system operations for reading, writing, and managing files"
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-git"],
+      "description": "Git operations for version control"
+    }
+  }
 }

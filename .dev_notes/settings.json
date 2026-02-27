@@ -41,16 +41,10 @@
       "timeout": 30000,
       "trust": true
     },
-    "playwright": {
+"playwright": {
       "command": "npx",
-      "args": ["-y", @modelcontextprotocol/server-playwright"],
+      "args": ["-y", "@modelcontextprotocol/server-playwright"],
       "timeout": 60000,
-      "trust": true
-    },
-    "shadcn": {
-      "command": "npx",
-      "args": ["-y", "mcp-server-shadcn"],
-      "timeout": 30000,
       "trust": true
     }
   },
