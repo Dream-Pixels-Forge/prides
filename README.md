@@ -2,7 +2,7 @@
 
 **Prototype. Review. Implement. Deploy. Extend. Secure**
 
-A comprehensive Qwen CLI extension for orchestrating **26+ specialized AI agents** across web development, 3D/VFX, motion graphics, game development, and post-production workflows.
+A comprehensive Qwen CLI extension for orchestrating **squad specialized AI agents** across web development, 3D/VFX, motion graphics, game development, and post-production workflows.
 
 ## Overview
 
@@ -149,7 +149,7 @@ qwen prides verify-accuracy
 
 ## Architecture
 
-### Agent Ecosystem (26 Agents)
+### Agent Ecosystem (26+ Agents)
 
 ```
 Prides Agent (Central Orchestrator)
