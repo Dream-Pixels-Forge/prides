@@ -22,7 +22,7 @@ Execute comprehensive performance analysis and optimization.
 
 ### Phase 1: Performance Audit
 
-1. **Performance SAgent**: Initial audit
+1. **Performance Agent**: Initial audit
    - Run Lighthouse audit
    - Measure Core Web Vitals
    - Identify performance issues
@@ -67,12 +67,10 @@ Execute comprehensive performance analysis and optimization.
 
 ### Phase 3: Optimization Implementation
 
-1. **Performance SAgent**: Prioritize optimizations
+1. **Performance Agent**: Prioritize optimizations
    - Impact vs. effort matrix
    - Quick wins first
    - Address critical issues
-
-2. **Coder SAgent**: Implement optimizations
 
 **Load Optimizations:**
 - Implement lazy loading
@@ -105,15 +103,10 @@ Execute comprehensive performance analysis and optimization.
 
 ### Phase 4: Validation
 
-1. **Performance SAgent**: Re-run audits
+1. **Performance Agent**: Re-run audits
    - Compare against baseline
    - Verify improvements
    - Check for regressions
-
-2. **Testing SAgent**: Regression tests
-   - Ensure functionality intact
-   - Run performance tests
-   - Validate optimizations
 
 ### Performance Budget
 
@@ -127,15 +120,7 @@ Execute comprehensive performance analysis and optimization.
 
 ### Documentation
 
-1. **Documentation SAgent**: Update performance docs
-   - Document optimizations
-   - Update performance budget
-   - Create monitoring guide
-
-2. **Git Master SAgent**: Commit changes
-   - Commit optimized code
-   - Update performance docs
-   - Tag performance release
+1. **Documentation Agent**: Update performance docs
 
 ## Output
 

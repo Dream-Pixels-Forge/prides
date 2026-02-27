@@ -23,9 +23,8 @@ Execute deployment to the specified environment following the zero-downtime depl
 **ALL gates must pass before deployment:**
 
 1. **Code Quality Gate**
-   - Lint SAgent: All linting passes
+   - Lint Agent: All linting passes
    - Type check: No type errors
-   - Code review: Critic SAgent approval
 
 2. **Testing Gate**
    - Unit tests: >80% coverage, 100% pass
@@ -33,30 +32,24 @@ Execute deployment to the specified environment following the zero-downtime depl
    - E2E tests: Critical paths pass
 
 3. **Security Gate**
-   - Security SAgent: Zero critical vulnerabilities
+   - Security Agent: Zero critical vulnerabilities
    - Dependency scan: No known vulnerabilities
    - Secrets scan: No exposed secrets
 
 4. **Performance Gate**
-   - Performance SAgent: No regressions
+   - Performance Agent: No regressions
    - Load test: Meets requirements
    - Bundle size: Within limits
 
 5. **Accessibility Gate**
-   - Accessibility SAgent: WCAG 2.1 AA compliant
+   - Accessibility Agent: WCAG 2.1 AA compliant
    - No critical violations
 
 ### Deployment Strategy
 
 #### For Production:
-1. **Deployment SAgent**: Create deployment plan
-2. **Git Master SAgent**: Tag release version
-3. **CI/CD SAgent**: Build production bundle
-4. **Deployment SAgent**: Deploy to staging first
-5. **Health Checks SAgent**: Validate staging
-6. **Deployment SAgent**: Blue-green deploy to production
-7. **Monitoring SAgent**: Real-time health monitoring
-8. **Rollback SAgent**: Standby for automatic rollback
+1. **Deployment Agent**: Create deployment plan and deploy
+2. **Monitoring Agent**: Real-time health monitoring
 
 #### For Staging:
 1. Build and deploy to staging
@@ -97,10 +90,8 @@ Execute deployment to the specified environment following the zero-downtime depl
 
 ### Post-Deployment
 
-1. **Monitoring SAgent**: Continuous monitoring (24h)
-2. **Documentation SAgent**: Update deployment logs
-3. **Git Master SAgent**: Create release notes
-4. **Tasks SAgent**: Update task status
+1. **Monitoring Agent**: Continuous monitoring (24h)
+2. **Documentation Agent**: Update deployment logs
 
 ## Output
 

@@ -22,7 +22,7 @@ Execute comprehensive accessibility audit and improvements to meet WCAG 2.1 AA s
 
 ### Phase 1: Accessibility Audit
 
-1. **Accessibility SAgent**: Initial audit
+1. **Accessibility Agent**: Initial audit
    - Run automated accessibility tests
    - Generate accessibility report
    - Identify violations by severity
@@ -120,16 +120,10 @@ Execute comprehensive accessibility audit and improvements to meet WCAG 2.1 AA s
 
 ### Phase 4: Validation
 
-1. **Accessibility SAgent**: Re-run audit
+1. **Accessibility Agent**: Re-run audit
    - Verify fixes
    - Check for new issues
    - Validate WCAG compliance
-
-2. **Testing SAgent**: Manual testing
-   - Keyboard-only navigation
-   - Screen reader testing (NVDA, VoiceOver)
-   - Zoom/magnification testing
-   - Color blindness simulation
 
 ### Accessibility Checklist
 
@@ -151,16 +145,7 @@ Execute comprehensive accessibility audit and improvements to meet WCAG 2.1 AA s
 
 ### Documentation
 
-1. **Documentation SAgent**: Accessibility documentation
-   - Accessibility statement
-   - VPAT (Voluntary Product Accessibility Template)
-   - Known issues list
-   - Testing procedures
-
-2. **Git Master SAgent**: Commit improvements
-   - Accessibility fixes
-   - Update accessibility docs
-   - Add to changelog
+1. **Documentation Agent**: Accessibility documentation
 
 ## Output
 

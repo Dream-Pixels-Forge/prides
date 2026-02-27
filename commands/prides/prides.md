@@ -2,7 +2,7 @@
 description: Create a complete feature implementation from requirements to deployment. Use {{args}} to specify the feature request.
 ---
 
-# New Feature Development Workflow
+# Development Workflow
 
 **Feature Request:** {{args}}
 
@@ -15,7 +15,7 @@ Coordinate the complete feature development lifecycle through the Prides multi-a
 1. **Idea Agent**: Brainstorm and refine the feature concept
 2. **PRD Doc Agent**: Generate product requirements document
 3. **Tasks Agent**: Break down into actionable tasks
-4. **Git Master Agent**: Create feature branch
+4. **Git Master Agent**: Create branches (features, devs, main)
 
 ### Phase 2: Design & Prototyping
 

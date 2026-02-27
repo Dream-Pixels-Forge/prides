@@ -23,7 +23,7 @@ Generate comprehensive technical documentation for the project.
 
 ### Pre-Documentation Analysis
 
-1. **Documentation SAgent**: Analyze codebase
+1. **Documentation Agent**: Analyze codebase
    - Scan source files
    - Identify undocumented components
    - Check documentation drift
@@ -79,20 +79,10 @@ Generate comprehensive technical documentation for the project.
 
 ### Post-Generation
 
-1. **Documentation SAgent**: Review generated docs
+1. **Documentation Agent**: Review generated docs
    - Verify accuracy
    - Check completeness
    - Ensure consistency
-
-2. **Critic SAgent**: Quality review
-   - Identify gaps
-   - Suggest improvements
-   - Check for drift
-
-3. **Git Master SAgent**: Commit documentation
-   - Add to docs/ directory
-   - Update documentation index
-   - Generate changelog
 
 ### Documentation Templates
 

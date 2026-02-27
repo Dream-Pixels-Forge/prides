@@ -12,7 +12,7 @@ Execute systematic debugging and diagnosis to identify root cause and implement 
 
 ### Phase 1: Issue Analysis
 
-1. **Debugger SAgent**: Initial issue assessment
+1. **Debugger Agent**: Initial issue assessment
    - Reproduce the issue (if possible)
    - Collect error messages and stack traces
    - Identify affected components
@@ -26,16 +26,11 @@ Execute systematic debugging and diagnosis to identify root cause and implement 
 
 ### Phase 2: Root Cause Analysis
 
-1. **Debugger SAgent**: Deep dive analysis
+1. **Debugger Agent**: Deep dive analysis
    - Trace execution flow
    - Identify failing code paths
    - Check for race conditions
    - Analyze data flow issues
-
-2. **Critic SAgent**: Code review for potential causes
-   - Check for similar issues in codebase
-   - Identify anti-patterns
-   - Review recent changes
 
 3. **Analysis Categories**
    - **Logic Errors**: Incorrect algorithms, conditions
@@ -46,42 +41,19 @@ Execute systematic debugging and diagnosis to identify root cause and implement 
 
 ### Phase 3: Fix Implementation
 
-1. **Debugger SAgent**: Propose fix strategy
+1. **Debugger Agent**: Propose fix strategy
    - Immediate workaround (if needed)
    - Proper long-term fix
    - Risk assessment
 
-2. **Coder SAgent**: Implement fix
-   - Create fix branch
-   - Implement solution
-   - Add regression tests
-
-3. **Critic SAgent**: Review fix
-   - Verify fix addresses root cause
-   - Check for side effects
-   - Ensure no new issues introduced
+2. **Coder Agent**: Implement fix
 
 ### Phase 4: Validation
 
-1. **Testing SAgent**: Run regression tests
+1. **Testing Agent**: Run regression tests
    - Test the specific issue
    - Run related test suites
    - Verify no regressions
-
-2. **Performance SAgent**: Performance validation
-   - Ensure no performance degradation
-   - Check resource usage
-
-3. **Security SAgent**: Security validation
-   - Ensure no security impact
-   - Verify no new vulnerabilities
-
-### Phase 5: Deployment
-
-1. **Git Master SAgent**: Create hotfix branch
-2. **Git Master SAgent**: Merge to main (expedited)
-3. **Deployment SAgent**: Deploy hotfix (priority)
-4. **Monitoring SAgent**: Enhanced monitoring
 
 ### Debug Tools Available
 
@@ -95,16 +67,7 @@ Execute systematic debugging and diagnosis to identify root cause and implement 
 
 ### Documentation
 
-1. **Documentation SAgent**: Create bug report
-   - Issue description
-   - Root cause analysis
-   - Fix implemented
-   - Lessons learned
-
-2. **Bugs-Fixed Archive**: Add to learning system
-   - Store for future reference
-   - Enable pattern recognition
-   - Prevent recurrence
+1. **Documentation Agent**: Create bug report
 
 ## Output
 

@@ -23,10 +23,9 @@ Execute the appropriate test suites based on the specified scope:
 | **All Tests** | `all` or empty | Complete test suite |
 
 ### Pre-Test Setup
-1. **Git Master SAgent**: Ensure clean working directory
-2. **Dependencies**: Install/update test dependencies
-3. **Environment**: Set up test environment variables
-4. **Database**: Prepare test database (if needed)
+1. **Dependencies**: Install/update test dependencies
+2. **Environment**: Set up test environment variables
+3. **Database**: Prepare test database (if needed)
 
 ### Test Execution
 
@@ -61,10 +60,8 @@ Execute the appropriate test suites based on the specified scope:
 - Screen reader compatibility
 
 ### Post-Test Actions
-1. **Testing SAgent**: Aggregate all test results
-2. **Critic SAgent**: Analyze failures and suggest fixes
-3. **Documentation SAgent**: Update test coverage docs
-4. **Git Master SAgent**: Commit test results if updated
+1. **Testing Agent**: Aggregate all test results
+2. **Documentation Agent**: Update test coverage docs
 
 ### Quality Gates
 

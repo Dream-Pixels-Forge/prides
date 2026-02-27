@@ -20,7 +20,7 @@ Execute comprehensive security audit following OWASP standards and industry best
 
 ### Phase 1: Automated Scanning
 
-1. **Security SAgent**: Run automated scans
+1. **Security Agent**: Run automated scans
 
 **Dependency Scan:**
 - Check for known vulnerabilities (npm audit, pip audit)
@@ -91,36 +91,19 @@ Execute comprehensive security audit following OWASP standards and industry best
 
 ### Phase 4: Threat Modeling
 
-1. **Security SAgent**: Identify threats
+1. **Security Agent**: Identify threats
    - Asset identification
    - Trust boundaries
    - Threat enumeration (STRIDE)
    - Risk assessment
 
-2. **Risk Matrix**
-   - Likelihood assessment
-   - Impact assessment
-   - Risk prioritization
-   - Mitigation strategies
-
 ### Phase 5: Remediation
 
-1. **Security SAgent**: Prioritize fixes
+1. **Security Agent**: Prioritize fixes
    - Critical: Fix immediately
    - High: Fix within 24h
    - Medium: Fix within 1 week
    - Low: Fix within 1 month
-
-2. **Coder SAgent**: Implement fixes
-   - Address critical vulnerabilities
-   - Apply security patches
-   - Update dependencies
-   - Fix configuration issues
-
-3. **Testing SAgent**: Validate fixes
-   - Re-run security scans
-   - Verify vulnerabilities resolved
-   - Check for regressions
 
 ### Compliance Checks (if compliance scope)
 
@@ -148,16 +131,7 @@ Execute comprehensive security audit following OWASP standards and industry best
 
 ### Documentation
 
-1. **Documentation SAgent**: Security documentation
-   - Security audit report
-   - Vulnerability register
-   - Remediation plan
-   - Security guidelines
-
-2. **Git Master SAgent**: Commit security fixes
-   - Emergency patches
-   - Security updates
-   - Configuration changes
+1. **Documentation Agent**: Security documentation
 
 ## Output
 
