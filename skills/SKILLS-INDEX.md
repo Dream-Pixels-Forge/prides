@@ -71,7 +71,7 @@ This document provides a complete index of all skills available in the Prides ex
 
 ---
 
-## Newly Created Skills (v0.1.1)
+## Newly Created Skills (v0.3.0)
 
 ### blender-add-on-master
 
@@ -301,4 +301,4 @@ We welcome community-contributed skills! Follow the structure above and submit a
 
 ---
 
-**Version:** 0.1.1 | **Total Skills:** 33 | **Last Updated:** 2026-02-27
+**Version:** 0.3.0 | **Total Skills:** 43 | **Last Updated:** 2026-03-02

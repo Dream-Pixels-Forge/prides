@@ -285,7 +285,7 @@ All agents use corresponding available skills in the skills directory combined w
 
 ```
 prides/
-├── qwen-extension.json         # Extension configuration (v0.1.1)
+├── qwen-extension.json         # Extension configuration (v0.3.0)
 ├── QWEN.md                    # This context and documentation
 ├── README.md                  # Extension overview
 ├── commands/prides/           # Command files (Markdown format)
@@ -518,7 +518,7 @@ Following official Qwen Code documentation:
 | **Format** | Markdown with YAML frontmatter | TOML (deprecated) |
 | **Parameters** | Use `{{args}}` for injection | Relying on default appending |
 | **File References** | Use `@{file path}` | Hardcoding file content |
-| **Shell Commands** | Use `!{command}` | Manual command execution |
+| **Shell Commands** | Instruct agents to run commands | Direct `!{command}` execution |
 | **Description** | Always provide clear description | Auto-generated descriptions |
 | **Organization** | Namespaced directories | All commands in root |
 
@@ -646,4 +646,4 @@ Following official Qwen Code documentation:
 
 ---
 
-**Version:** 0.1.1 | **Last Updated:** 2026-02-27 | **License:** See LICENSE
+**Version:** 0.3.0 | **Last Updated:** 2026-03-02 | **License:** See LICENSE

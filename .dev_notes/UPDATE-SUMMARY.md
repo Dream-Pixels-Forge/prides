@@ -1,7 +1,7 @@
 # Prides Extension - Complete Update Summary
 
-**Version:** 0.1.1  
-**Date:** 2026-02-27  
+**Version:** 0.3.0  
+**Date:** 2026-03-02  
 **Status:** ✅ Complete
 
 ---
@@ -12,7 +12,7 @@ The Prides extension has been comprehensively updated to include **26 specialize
 
 ---
 
-## What's New in v0.1.1
+## What's New in v0.3.0
 
 ### 🎬 3D & VFX Expansion (7 New Agents)
 
@@ -456,19 +456,19 @@ No migration required! The update is additive:
 ## Credits
 
 **Developed by:** Dream Pixels Forge  
-**Version:** 0.1.1  
+**Version:** 0.3.0  
 **License:** See LICENSE  
-**Last Updated:** 2026-02-27
+**Last Updated:** 2026-03-02
 
 ---
 
 ## Summary
 
-The Prides extension v0.1.1 represents a **comprehensive multi-domain development platform** with:
+The Prides extension v0.3.0 represents a **comprehensive multi-domain development platform** with:
 
 - ✅ **26 specialized agents** across 6 domains
-- ✅ **33 specialized skills** for domain expertise
-- ✅ **7 MCP servers** for direct tool integration
+- ✅ **43 specialized skills** for domain expertise
+- ✅ **10 MCP servers** for direct tool integration
 - ✅ **9 commands** for common workflows
 - ✅ **5 templates** for consistency
 - ✅ **Complete documentation** for all features

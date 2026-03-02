@@ -1,6 +1,6 @@
 # Prides Extension - Quick Reference
 
-**Version:** 0.1.1 | **Agents:** 26 | **Skills:** 33 | **MCP:** 7
+**Version:** 0.3.0 | **Agents:** 26 | **Skills:** 43 | **MCP:** 10
 
 ---
 

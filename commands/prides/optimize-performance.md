@@ -23,7 +23,7 @@ Execute comprehensive performance analysis and optimization.
 
 ### Phase 1: Performance Audit
 
-1. @performance-sagent: Initial audit
+1. Initial audit
    - Run Lighthouse audit
    - Measure Core Web Vitals
    - Identify performance issues
@@ -39,6 +39,7 @@ Execute comprehensive performance analysis and optimization.
 ### Phase 2: Deep Analysis
 
 #### Load Performance
+
 - Analyze critical rendering path
 - Identify render-blocking resources
 - Check image optimization
@@ -46,6 +47,7 @@ Execute comprehensive performance analysis and optimization.
 - Measure network requests
 
 #### Runtime Performance
+
 - Profile JavaScript execution
 - Identify long tasks
 - Analyze frame drops
@@ -53,6 +55,7 @@ Execute comprehensive performance analysis and optimization.
 - Measure animation performance
 
 #### Bundle Analysis
+
 - Analyze bundle composition
 - Identify large dependencies
 - Check for duplicate packages
@@ -60,6 +63,7 @@ Execute comprehensive performance analysis and optimization.
 - Measure tree-shaking effectiveness
 
 #### Memory Analysis
+
 - Take heap snapshots
 - Identify memory leaks
 - Check for detached DOM nodes
@@ -74,6 +78,7 @@ Execute comprehensive performance analysis and optimization.
    - Address critical issues
 
 **Load Optimizations:**
+
 - Implement lazy loading
 - Optimize images (WebP, AVIF)
 - Enable compression (gzip, brotli)
@@ -82,6 +87,7 @@ Execute comprehensive performance analysis and optimization.
 - Preload critical resources
 
 **Runtime Optimizations:**
+
 - Debounce/throttle events
 - Virtualize long lists
 - Memoize expensive calculations
@@ -89,6 +95,7 @@ Execute comprehensive performance analysis and optimization.
 - Use Web Workers for heavy tasks
 
 **Bundle Optimizations:**
+
 - Remove unused dependencies
 - Implement code splitting
 - Configure tree-shaking
@@ -96,6 +103,7 @@ Execute comprehensive performance analysis and optimization.
 - Analyze and replace large packages
 
 **Memory Optimizations:**
+
 - Fix memory leaks
 - Clean up subscriptions
 - Remove event listeners
@@ -126,6 +134,7 @@ Execute comprehensive performance analysis and optimization.
 ## Output
 
 Provide performance report:
+
 - Baseline metrics
 - Optimizations implemented
 - Improved metrics

@@ -344,4 +344,4 @@ prides/
 
 ---
 
-**Version:** 0.1.1 | **3D/VFX Agents:** 7 | **Skills:** 33 | **Last Updated:** 2026-02-27
+**Version:** 0.3.0 | **3D/VFX Agents:** 7 | **Skills:** 43 | **Last Updated:** 2026-03-02

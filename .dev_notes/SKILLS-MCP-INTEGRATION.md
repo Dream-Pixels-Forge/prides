@@ -370,4 +370,4 @@ filesystem_write_file MCP to customize the styles"
 
 ---
 
-**Version:** 0.1.1 | **Skills Integration:** Complete | **MCP Integration:** Complete
+**Version:** 0.3.0 | **Skills Integration:** Complete | **MCP Integration:** Complete

@@ -9,35 +9,38 @@ description: Create a complete feature implementation from requirements to deplo
 
 ## Instructions
 
-Coordinate the complete feature development lifecycle through the Prides multi-agent system:
+Call the `@start-sprint-agent` multi-agent system to coordinate the complete feature development lifecycle:
 
 ### Phase 1: Planning & Requirements
 
-1. @idea-sagent: Brainstorm and refine the feature concept
-2. @prd-doc-sagent: Generate product requirements document
-3. @tasks-sagent: Break down into actionable tasks
-4. @git-master-sagent: Create branches (features, devs, main)
+1.1. Check if the project is existing one or new one
+1.2. If new one ask for clarification and start the full workflow
+1.3. If existing one ask for clarification and start the implementation workflow
+1.4. Brainstorm and refine the feature concept
+2. Generate product requirements document
+3. Break down into actionable tasks
+4. Create branches (features, devs, main)
 
 ### Phase 2: Design & Prototyping
 
-1. @ui-ux-sagent: Design specification and user experience
-2. @prototyper-sagent: Create visual prototype (Stitch integration)
+1. Design specification and user experience
+2. Create visual prototype (Stitch integration)
 
 ### Phase 3: Implementation
 
-1. @coder-sagent: Implement the feature
-2. @lint-sagent: Code quality check (apply auto-fixes)
-3. @critic-sagent: Deep code review for issues
+1. Implement the feature
+2. Code quality check (apply auto-fixes)
+3. Deep code review for issues
 
 ### Phase 4: Quality Assurance
 
-1. @testing-sagent: Run tests
-2. @performance-sagent: Performance validation
-3. @accessibility-sagent: WCAG compliance check
+1. Run tests
+2. Performance validation
+3. WCAG compliance check
 
 ### Phase 5: Deployment
 
-1. @deployment-sagent: Execute deployment strategy
+1. Execute deployment strategy
 
 ## Quality Gates
 
