@@ -1,5 +1,5 @@
 ---
-name: prides
+name: start-sprint
 description: Create a complete feature implementation from requirements to deployment. Use {{args}} to specify the feature request.
 ---
 
@@ -9,7 +9,7 @@ description: Create a complete feature implementation from requirements to deplo
 
 ## Instructions
 
-Call the `@start-sprint-agent` multi-agent system to coordinate the complete feature development lifecycle:
+Call the `@prides` multi-agent system to coordinate the complete feature development lifecycle:
 
 ### Phase 1: Planning & Requirements
 
@@ -51,4 +51,7 @@ Call the `@start-sprint-agent` multi-agent system to coordinate the complete fea
 
 ## Output
 
-Generate comprehensive reports for each phase and maintain documentation in the project roadmap.
+Generate comprehensive reports for each phase and maintain documentation in the folders:
+
+- Roadmap: Analysis, prd, tasks, plan
+- .dev_notes : bug fixed, summary, deploy, etc

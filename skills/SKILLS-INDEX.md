@@ -4,13 +4,13 @@
 
 This document provides a complete index of all skills available in the Prides extension.
 
-**Total Skills: 33**
+**Total Skills: 33+**
 
 ---
 
 ## Skills by Category
 
-### 🎨 Design & UI (6 skills)
+### 🎨 Design & UI (6+ skills)
 
 | Skill | Directory | Primary Use |
 |-------|-----------|-------------|
@@ -33,7 +33,7 @@ This document provides a complete index of all skills available in the Prides ex
 | **foundry-nuke-master** | `skills/foundry-nuke-master/` | Nuke Python & gizmos ✨ NEW |
 | **unity-sagent** | `skills/unity-sagent/` | Unity C# scripting ✨ NEW |
 
-### 💻 Development (5 skills)
+### 💻 Development (5+ skills)
 
 | Skill | Directory | Primary Use |
 |-------|-----------|-------------|
@@ -43,7 +43,7 @@ This document provides a complete index of all skills available in the Prides ex
 | **python-master** | `skills/python-master/` | Python development |
 | **code-search** | `skills/code-search/` | Code pattern search |
 
-### 🔍 Search & Research (7 skills)
+### 🔍 Search & Research (7+ skills)
 
 | Skill | Directory | Primary Use |
 |-------|-----------|-------------|
@@ -55,7 +55,7 @@ This document provides a complete index of all skills available in the Prides ex
 | **x-search** | `skills/x-search/` | Twitter/X search |
 | **web-search-advanced-tweet** | `skills/web-search-advanced-tweet/` | Advanced tweet search |
 
-### 🛠️ Utility (9 skills)
+### 🛠️ Utility (9+ skills)
 
 | Skill | Directory | Primary Use |
 |-------|-----------|-------------|
@@ -78,6 +78,7 @@ This document provides a complete index of all skills available in the Prides ex
 **Purpose:** Create Blender add-ons and Python scripts
 
 **Capabilities:**
+
 - Add-on architecture and structure
 - Operator and panel creation
 - Mesh manipulation
@@ -86,6 +87,7 @@ This document provides a complete index of all skills available in the Prides ex
 - Batch processing
 
 **Example Usage:**
+
 ```
 "Use blender-add-on-master skill to create a mesh generator add-on"
 "Use blender-add-on-master skill to automate UV unwrapping"
@@ -93,6 +95,7 @@ This document provides a complete index of all skills available in the Prides ex
 ```
 
 **Files:**
+
 - `SKILL.md` - Main skill definition
 - `resources/getting-started.md` - Quick start guide
 
@@ -103,6 +106,7 @@ This document provides a complete index of all skills available in the Prides ex
 **Purpose:** Houdini VEX scripting and Python tools
 
 **Capabilities:**
+
 - VEX programming (wrangles, shaders)
 - Python scripting in Houdini
 - HDA (Digital Asset) creation
@@ -110,6 +114,7 @@ This document provides a complete index of all skills available in the Prides ex
 - Performance optimization
 
 **Example Usage:**
+
 ```
 "Use sidefx-houdini-guru skill to create procedural building generator"
 "Use sidefx-houdini-guru skill to write VEX for point scattering"
@@ -117,6 +122,7 @@ This document provides a complete index of all skills available in the Prides ex
 ```
 
 **Files:**
+
 - `SKILL.md` - Main skill definition
 - `resources/quick-reference.md` - VEX quick reference
 
@@ -127,6 +133,7 @@ This document provides a complete index of all skills available in the Prides ex
 **Purpose:** After Effects ExtendScript/JavaScript automation
 
 **Capabilities:**
+
 - Script automation
 - Expression development
 - ScriptUI panel creation
@@ -134,6 +141,7 @@ This document provides a complete index of all skills available in the Prides ex
 - Batch processing
 
 **Example Usage:**
+
 ```
 "Use after-effects-scripts-master skill to create batch render script"
 "Use after-effects-scripts-master skill to automate project organization"
@@ -141,6 +149,7 @@ This document provides a complete index of all skills available in the Prides ex
 ```
 
 **Files:**
+
 - `SKILL.md` - Main skill definition
 - `resources/getting-started.md` - Quick start guide
 
@@ -151,6 +160,7 @@ This document provides a complete index of all skills available in the Prides ex
 **Purpose:** Python best practices and development
 
 **Capabilities:**
+
 - Clean, Pythonic code
 - Type hints and annotations
 - Performance optimization
@@ -158,6 +168,7 @@ This document provides a complete index of all skills available in the Prides ex
 - Web development patterns
 
 **Example Usage:**
+
 ```
 "Use python-master skill to review code for best practices"
 "Use python-master skill to optimize slow function"
@@ -165,6 +176,7 @@ This document provides a complete index of all skills available in the Prides ex
 ```
 
 **Files:**
+
 - `SKILL.md` - Main skill definition
 
 ---
@@ -287,18 +299,21 @@ We welcome community-contributed skills! Follow the structure above and submit a
 ## Resources
 
 ### Documentation
+
 - [Skills Integration Guide](../mandatory_docs/skills-integration-guide.md)
 - [Qwen Code Skills Docs](https://qwenlm.github.io/qwen-code-docs/en/users/features/skills/)
 
 ### Skill Directories
+
 - Main: `skills/`
 - Resources: `skills/{skill}/resources/`
 - Examples: `skills/{skill}/examples/`
 
 ### Related
+
 - [MCP Configuration](../.qwen/MCP-CONFIG.md)
 - [Agent Specifications](../mandatory_docs/agent-specifications.md)
 
 ---
 
-**Version:** 0.3.0 | **Total Skills:** 43 | **Last Updated:** 2026-03-02
+**Version:** 0.3.1 | **Total Skills:** 43 | **Last Updated:** 2026-03-13

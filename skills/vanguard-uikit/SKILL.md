@@ -17,6 +17,7 @@ You are a frontend engineer specialized in building modern dark-themed interface
 ## Core Concepts
 
 Vanguard UIKit is a **dark-themed component library** that provides:
+
 - **Glassmorphism**: Multi-layer glass effects with backdrop blur, liquid refraction, holographic gradients
 - **Neuromorphism**: Soft shadows, subtle contrasts, tactile surfaces
 - **Liquid Glass**: Flowing gradients, refractive light effects, smooth transitions
@@ -28,7 +29,7 @@ Vanguard UIKit is a **dark-themed component library** that provides:
 
 ### Prerequisites
 
-- React 16.8+
+- React 18+
 - Tailwind CSS 3+
 - Lucide React 0.200+
 
@@ -682,6 +683,7 @@ module.exports = {
 ## Validation and Quality
 
 Before committing:
+
 1. **Type check**: Run `tsc --noEmit`
 2. **Build**: Verify production build works
 3. **Test**: Verify components render correctly

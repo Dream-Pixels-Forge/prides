@@ -528,6 +528,6 @@ See LICENSE file for details.
 
 ---
 
-**Version:** 0.3.0 | **Agents:** 26 | **Skills:** 43 | **MCP Servers:** 10 | **Last Updated:** 2026-03-02
+**Version:** 0.3.1 | **Agents:** 26 | **Skills:** 43 | **MCP Servers:** 10 | **Last Updated:** 2026-03-13
 
 **Made with ❤️ by Dream Pixels Forge**
