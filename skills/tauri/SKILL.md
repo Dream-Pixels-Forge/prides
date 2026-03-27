@@ -46,7 +46,7 @@ xcode-select --install
 node --version  # v18+
 
 # Package manager
-npm --version
+pnpm --version
 ```
 
 ## Installation
@@ -55,10 +55,10 @@ npm --version
 
 ```bash
 # Interactive - choose your framework
-npm create tauri-app@latest
+pnpm create tauri-app@latest
 
 # Non-interactive with options
-npm create tauri-app@latest my-app -- --template react-ts --manager npm
+pnpm create tauri-app@latest my-app -- --template react-ts --manager pnpm
 ```
 
 ### Available Templates
@@ -107,9 +107,9 @@ my-app/
   "version": "1.0.0",
   "identifier": "com.myapp.desktop",
   "build": {
-    "beforeDevCommand": "npm run dev",
+    "beforeDevCommand": "pnpm run dev",
     "devUrl": "http://localhost:5173",
-    "beforeBuildCommand": "npm run build",
+    "beforeBuildCommand": "pnpm run build",
     "frontendDist": "../dist"
   },
   "app": {

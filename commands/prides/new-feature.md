@@ -9,7 +9,7 @@ description: Start a new feature development workflow. Use {{args}} to specify t
 
 ## Workflow
 
-0. Call `@start-sprint-agent`to start the new feauture implementation workflow
+0. Call `@prides-agent` to start the new feature implementation workflow
 1. Brainstorm and refine the feature concept
 2. Generate product requirements document if needed
 3. Break down into actionable tasks

@@ -311,9 +311,9 @@ We welcome community-contributed skills! Follow the structure above and submit a
 
 ### Related
 
-- [MCP Configuration](../.qwen/MCP-CONFIG.md)
+- [MCP Configuration](../.dev_notes/MCP-CONFIG.md)
 - [Agent Specifications](../mandatory_docs/agent-specifications.md)
 
 ---
 
-**Version:** 0.3.1 | **Total Skills:** 43 | **Last Updated:** 2026-03-13
+**Version:** 0.4.0 | **Total Skills:** 43 | **Last Updated:** 2026-03-27

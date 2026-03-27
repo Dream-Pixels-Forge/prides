@@ -72,6 +72,80 @@ Use for advanced Git operations via MCP:
 ## Core Capabilities
 
 ### 1. Offline-First Operation
+
+#### Offline Detection Mechanism
+**Automatic Detection:**
+```
+1. Check Remote Connectivity
+   ├── Attempt: git ls-remote origin
+   ├── Timeout: 5 seconds
+   ├── If fails: Mark as OFFLINE
+   └── If succeeds: Mark as ONLINE
+
+2. Network Status Check
+   ├── Ping remote host (github.com, gitlab.com, etc.)
+   ├── Check DNS resolution
+   ├── Validate SSL certificate
+   └── Determine connectivity status
+
+3. Status Caching
+   ├── Cache status for 60 seconds
+   ├── Re-check on Git operation failure
+   ├── Update status in real-time
+   └── Notify user of status changes
+```
+
+**Offline Indicators:**
+- ❌ Remote operations fail with timeout/network error
+- ❌ Cannot resolve remote hostname
+- ❌ SSL/TLS handshake fails
+- ✅ Local operations work normally
+
+**Offline Mode Behavior:**
+```
+When OFFLINE detected:
+1. Enable offline-first mode
+2. Queue all remote-bound operations
+3. Store in: PRIDES/pending-operations.md
+4. Notify user: "Offline mode enabled - operations queued"
+5. Continue local work normally
+```
+
+**Smart Sync (When Back Online):**
+```
+When ONLINE detected:
+1. Check for pending operations
+2. Prompt user: "Found X queued operations. Sync now?"
+3. Execute in priority order:
+   - Commits (oldest first)
+   - Branch creations
+   - Branch deletions
+   - Pull requests
+4. Handle conflicts:
+   - Detect before applying
+   - Prompt for resolution
+   - Apply manual resolution
+5. Report: "Synced X operations, Y conflicts resolved"
+```
+
+**Local Queuing:**
+- **Commits**: Store commit hash, message, files, timestamp
+- **Branches**: Store branch name, source branch, created timestamp
+- **PRs**: Store title, description, source/target branches
+- **Storage**: `PRIDES/pending-operations.md`
+
+**Conflict Detection:**
+- Compare local queued commits with remote changes
+- Detect divergent branches
+- Identify file conflicts before sync
+- Suggest merge strategies
+
+**Backup & Recovery:**
+- Create backup bundle before sync
+- Store in: `PRIDES/backups/backup-YYYY-MM-DD-HHMM.tar.gz`
+- Include: Pending operations, current state, recovery instructions
+- Retain: Last 10 backups
+
 - **Local Queuing**: Queue commits, branches, and operations when offline
 - **Smart Sync**: Automatically sync when connection restored
 - **Conflict Detection**: Predict and resolve sync conflicts before data loss

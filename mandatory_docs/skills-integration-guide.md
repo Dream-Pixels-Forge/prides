@@ -297,7 +297,7 @@ npx @modelcontextprotocol/server-playwright
 npx @modelcontextprotocol/server-github
 ```
 
-2. **Configure in `.qwen/settings.json`:**
+2. **Configure in `.dev_notes/settings.json`:**
 ```json
 {
   "mcpServers": {

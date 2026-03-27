@@ -14,6 +14,26 @@ This document outlines a comprehensive **Multi-Agent Development System** that o
 - **Seamless offline-first** operation with smart sync
 - **Enterprise-grade** quality, security, and accessibility compliance
 
+### PRIDES.md Folder System
+
+The **PRIDES.md** folder serves as the project's central knowledge hub, maintaining real-time context and decision tracking across all development activities:
+
+| File | Purpose |
+|------|---------|
+| **project-context.md** | Core project information, goals, tech stack, and architecture overview |
+| **agent-coordination.md** | Active agents, task assignments, and coordination state |
+| **active-workflow.md** | Current workflow phase, progress, and next steps |
+| **decision-log.md** | Key architectural and implementation decisions with rationale |
+| **quality-gates.md** | Quality standards, checklists, and compliance status |
+| **skills-inventory.md** | Available skills, capabilities, and usage tracking |
+
+**Benefits:**
+- **Persistent Context** - Project knowledge survives session restarts
+- **Decision Transparency** - All major decisions documented with rationale
+- **Workflow Visibility** - Real-time view of active development phases
+- **Skills Optimization** - Automatic routing to best-suited agents and skills
+- **Quality Assurance** - Continuous tracking of quality gate compliance
+
 ---
 
 ## Quick Start
@@ -21,6 +41,9 @@ This document outlines a comprehensive **Multi-Agent Development System** that o
 ### Using Commands
 
 ```bash
+# Initialize a new project
+/prides:init-project "Project Name"
+
 # Start a new feature development
 /prides:new-feature "Add user authentication with social login"
 
@@ -47,6 +70,22 @@ This document outlines a comprehensive **Multi-Agent Development System** that o
 
 # Improve accessibility
 /prides:improve-accessibility "keyboard"
+```
+
+### PRIDES.md Management
+
+```bash
+# View project context
+@prides-agent View project-context.md
+
+# Check active workflow
+@prides-agent What's the current workflow phase?
+
+# Review decision log
+@prides-agent Show recent architectural decisions
+
+# Check skills inventory
+@prides-agent What skills are available for this task?
 ```
 
 ### Using Agents Directly
@@ -107,7 +146,6 @@ This document outlines a comprehensive **Multi-Agent Development System** that o
 │ • UI/UX      │ │ • Improvement│ │ • Monitoring │
 │ • Prototyper │ │ • Enhancer   │ │ • Rollback   │
 │ • Debugger   │ │ • Refiner    │ │ • CI/CD      │
-│ • Grid Master│ │              │ │              │
 └──────────────┘ └──────────────┘ └──────────────┘
 ```
 
@@ -131,6 +169,7 @@ description: Clear description of what the command does
 
 | Command | Description | Parameters |
 |---------|-------------|------------|
+| `/prides:init-project` | Initialize new project with PRIDES.md folder | Project name |
 | `/prides:new-feature` | Create complete feature implementation | Feature request |
 | `/prides:git-commit` | Commit with intelligent message | Optional message |
 | `/prides:run-tests` | Run comprehensive test suites | Test scope |
@@ -170,7 +209,7 @@ Use `{{args}}` for user-provided parameters:
 
 | Agent | File | Primary Function | Smart Features |
 |-------|------|-----------------|----------------|
-| **Prides** | `prides-agent.md` | Project orchestration | Proactivity, smart detection, predictive issues, context caching, learning system |
+| **Prides** | `prides-agent.md` | Project orchestration | Proactivity, smart detection, predictive issues, context caching, learning system, **skills awareness**, **PRIDES.md management**, **decision logging** |
 | **Git Master** | `git-master-sagent.md` | Version control | Offline-first, auto-sync, branch management, conflict resolution |
 | **Plan** | `plan-sagent.md` | Implementation planning | Adaptive planning, milestone tracking, risk assessment, effort estimation |
 | **Tasks** | `tasks-sagent.md` | Task management | Dependency detection, bottleneck alerts, auto-prioritization (WSJF) |
@@ -275,9 +314,24 @@ Use `{{args}}` for user-provided parameters:
 | **Pre-Deploy** | All gates + smoke tests + rollback readiness | Block deployment if failed |
 | **Post-Deploy** | Health checks, metrics validation | Auto-rollback if failed |
 
-### 5. Skills Capabilities
+### 5. Skills Awareness
 
-All agents use corresponding available skills in the skills directory combined with mcp servers
+| Capability | Description | Benefit |
+|------------|-------------|---------|
+| **Auto-Discovery** | Scans `skills/` directory on initialization | All available skills automatically registered |
+| **Skills Routing** | Routes tasks to agents with appropriate skills | Optimal skill utilization for each task |
+| **Usage Tracking** | Tracks skill effectiveness and usage patterns | Continuous improvement of skill selection |
+| **Skills Guidance** | Suggests relevant skills for current task | Discover capabilities you didn't know existed |
+
+### 6. Skills Capabilities
+
+All agents use corresponding available skills in the skills directory combined with mcp servers. The system includes **46+ specialized skills** covering:
+
+- **Design & UI** - shadcn-ui, frontend-design, ui-ux-pro-max, design-md, stitch-loop
+- **3D & Motion** - After Effects, Blender, Cinema 4D, Houdini, Nuke
+- **Development** - Next.js, React, Tailwind, Tauri, Electron, Python
+- **Research** - Company search, people search, code search, financial reports, academic papers
+- **AI & Video** - AI video generation, prompt enhancement, skill creation
 
 ---
 
@@ -285,10 +339,18 @@ All agents use corresponding available skills in the skills directory combined w
 
 ```
 prides/
-├── qwen-extension.json         # Extension configuration (v0.3.0)
+├── qwen-extension.json         # Extension configuration (v2.0.0)
 ├── QWEN.md                    # This context and documentation
 ├── README.md                  # Extension overview
+├── PRIDES.md/                 # Project knowledge hub (NEW in v2.0)
+│   ├── project-context.md     # Core project information and goals
+│   ├── agent-coordination.md  # Active agents and task assignments
+│   ├── active-workflow.md     # Current workflow phase and progress
+│   ├── decision-log.md        # Architectural decisions with rationale
+│   ├── quality-gates.md       # Quality standards and compliance status
+│   └── skills-inventory.md    # Available skills and usage tracking
 ├── commands/prides/           # Command files (Markdown format)
+│   ├── init-project.md        # Project initialization workflow
 │   ├── new-feature.md         # Feature development workflow
 │   ├── git-commit.md          # Intelligent commit generation
 │   ├── run-tests.md           # Comprehensive test execution
@@ -333,12 +395,34 @@ prides/
 │   ├── api-reference-template.md
 │   ├── component-doc-template.md
 │   └── test-plan-template.md
-├── skills/                   # Extension skills (optional)
-│   ├── shadcn-ui/
-│   ├── remotion/
-│   ├── stitch-loop/
-│   ├── design-md/
-│   └── react-components/
+├── skills/                   # Extension skills (46+ available)
+│   ├── Design & UI/
+│   │   ├── shadcn-ui/
+│   │   ├── frontend-design/
+│   │   ├── ui-ux-pro-max/
+│   │   ├── design-md/
+│   │   └── stitch-loop/
+│   ├── 3D & Motion/
+│   │   ├── after-effects-scripts-master/
+│   │   ├── blender-add-on-master/
+│   │   ├── cinema4d-master/
+│   │   ├── sidefx-houdini-guru/
+│   │   └── foundry-nuke-master/
+│   ├── Development/
+│   │   ├── nextjs/
+│   │   ├── react-components/
+│   │   ├── tailwindcss/
+│   │   ├── tauri/
+│   │   └── electron/
+│   ├── Research/
+│   │   ├── company-search/
+│   │   ├── people-search/
+│   │   ├── code-search/
+│   │   └── research-paper-search/
+│   └── AI & Video/
+│       ├── ai-video-generation/
+│       ├── enhance-prompt/
+│       └── skill-creator/
 ├── bugs-fixed/              # Learning system
 │   └── (patterns stored here)
 └── mandatory_docs/          # Core documentation
@@ -505,6 +589,84 @@ System prompt content...
 10. Sync report: 12 commits, 3 branches, 1 merge synced
 ```
 
+### Example 4: Project Initialization
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│ Step 1: Run Initialization Command                              │
+├─────────────────────────────────────────────────────────────────┤
+│ User: /prides:init-project "My Awesome Project"                 │
+│                                                                 │
+│ Prides Agent:                                                  │
+│   ✓ Analyzing project requirements                              │
+│   ✓ Setting up project structure                                │
+│   ✓ Creating PRIDES.md folder                                   │
+└─────────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│ Step 2: PRIDES.md Folder Creation                               │
+├─────────────────────────────────────────────────────────────────┤
+│ Creating: PRIDES.md/project-context.md                          │
+│   - Project name, goals, vision                                 │
+│   - Tech stack selection                                        │
+│   - Architecture overview                                       │
+│                                                                 │
+│ Creating: PRIDES.md/agent-coordination.md                       │
+│   - Initial agent assignments                                   │
+│   - Task coordination state                                     │
+│                                                                 │
+│ Creating: PRIDES.md/active-workflow.md                          │
+│   - Current phase: Initialization                               │
+│   - Next steps defined                                          │
+│                                                                 │
+│ Creating: PRIDES.md/decision-log.md                             │
+│   - Initial architecture decisions                              │
+│   - Technology choices documented                               │
+│                                                                 │
+│ Creating: PRIDES.md/quality-gates.md                            │
+│   - Quality standards configured                                │
+│   - Checklists initialized                                      │
+│                                                                 │
+│ Creating: PRIDES.md/skills-inventory.md                         │
+│   - Scanning skills/ directory (46 skills found)                │
+│   - Skills categorized and indexed                              │
+│   - Usage tracking initialized                                  │
+└─────────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│ Step 3: Skills Discovery & Configuration                        │
+├─────────────────────────────────────────────────────────────────┤
+│ Skills Auto-Discovered:                                         │
+│   • Design & UI (5 skills)                                      │
+│   • 3D & Motion (5 skills)                                      │
+│   • Development (5 skills)                                      │
+│   • Research (4 skills)                                         │
+│   • AI & Video (3 skills)                                       │
+│   • And 24+ more specialized skills                             │
+│                                                                 │
+│ MCP Servers Configured:                                         │
+│   ✓ git - Version control operations                            │
+│   ✓ filesystem - File operations                                │
+│   ✓ github - GitHub integration (optional)                      │
+│   ✓ playwright - E2E testing (optional)                         │
+└─────────────────────────────────────────────────────────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│ Step 4: Ready for Development                                   │
+├─────────────────────────────────────────────────────────────────┤
+│ ✓ Project initialized successfully                              │
+│ ✓ PRIDES.md folder created with 6 core files                    │
+│ ✓ 46+ skills available and indexed                              │
+│ ✓ Quality gates configured                                      │
+│ ✓ Agent coordination ready                                      │
+│                                                                 │
+│ Next Steps:                                                     │
+│   /prides:new-feature "Your first feature"                      │
+│   @prides-agent What can I build?                               │
+│   View PRIDES.md/* files for project context                    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
 ---
 
 ## Best Practices
@@ -551,6 +713,7 @@ Following official Qwen Code documentation:
 
 | Phase | Key Practice |
 |-------|--------------|
+| **Initialization** | Run `/prides:init-project` to set up PRIDES.md folder and skills inventory |
 | **Planning** | Always use Plan SAgent PROACTIVELY |
 | **Implementation** | Coder SAgent follows patterns |
 | **Review** | Critic SAgent MUST be used before commit |
@@ -598,7 +761,7 @@ Following official Qwen Code documentation:
 - [Quality Standards](mandatory_docs/quality-standards.md)
 - [Agent Specifications](mandatory_docs/agent-specifications.md)
 - [Skills Integration Guide](mandatory_docs/skills-integration-guide.md)
-- [MCP Configuration](.qwen/MCP-CONFIG.md)
+- [MCP Configuration](.dev_notes/MCP-CONFIG.md)
 
 ### Templates
 - [Feature Template](templates/feature-template.md)
@@ -646,4 +809,4 @@ Following official Qwen Code documentation:
 
 ---
 
-**Version:** 0.3.0 | **Last Updated:** 2026-03-02 | **License:** See LICENSE
+**Version:** 0.4.0 | **Last Updated:** 2026-03-27 | **License:** See LICENSE

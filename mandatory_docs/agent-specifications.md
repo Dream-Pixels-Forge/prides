@@ -16,7 +16,6 @@ This document provides detailed specifications for all agents in the Prides mult
 - **UI/UX SAgent**: Design guidance
 - **Prototyper SAgent**: Visual prototypes
 - **Debugger SAgent**: Bug diagnosis
-- **Grid Master SAgent**: Layout calculations
 
 ### Quality & Security Agents
 - **Testing SAgent**: QA automation

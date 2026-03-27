@@ -12,8 +12,8 @@ The Prides extension provides a complete ecosystem of specialized agents for the
 
 ### 🚀 Core Capabilities
 
-- **26+ Specialized Agents** - Web dev, 3D/VFX, motion graphics, game dev, post-production
-- **33+ Specialized Skills** - Domain expertise on demand
+- **28 Specialized Agents** - Web dev, 3D/VFX, motion graphics, game dev, post-production
+- **45 Specialized Skills** - Domain expertise on demand
 - **10 MCP Servers** - Direct tool integration
 - **Multi-Domain Support** - Web, 3D, VFX, games, video, design
 - **Skills Integration** - Leverage specialized knowledge per task
@@ -150,7 +150,7 @@ qwen prides verify-accuracy
 
 ## Architecture
 
-### Agent Ecosystem (26+ Agents)
+### Agent Ecosystem (28 Agents)
 
 ```
 Prides Agent (Central Orchestrator)
@@ -170,11 +170,11 @@ Prides Agent (Central Orchestrator)
 │   ├── Plan, Tasks, Idea
 │   ├── Analyst, PRD Doc, Documentation
 │
-└── Deployment & Support (3 agents)
-    ├── Deployment, Git Master, Monitoring
+└── Deployment & Support (6 agents)
+    ├── Deployment, CI/CD, Rollback, Monitoring, Git Master
 ```
 
-### Skills Library (33 Skills)
+### Skills Library (45 Skills)
 
 | Category | Skills |
 |----------|--------|
@@ -212,7 +212,6 @@ The extension orchestrates a comprehensive agent ecosystem:
 
 - **UI/UX SAgent**: User experience design and implementation
 - **Prototyper SAgent**: UI prototyping with Google Stitch
-- **Grid Master SAgent**: Grid layout calculations
 - **Debugger SAgent**: Issue debugging and resolution
 
 #### Quality-Security SAgents
@@ -317,7 +316,7 @@ Call @coder-sagent to implement the following feature request:
 ```json
 {
   "name": "prides",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "contextFileName": "QWEN.md",
   "commands": "commands/prides",
   "skills": "skills",
@@ -338,7 +337,7 @@ Call @coder-sagent to implement the following feature request:
 
 ### MCP Configuration
 
-See `.qwen/settings.json` for MCP server configuration and `.qwen/MCP-CONFIG.md` for setup instructions.
+See `.dev_notes/settings.json` for MCP server configuration and `.dev_notes/MCP-CONFIG.md` for setup instructions.
 
 ### Skills Configuration
 
@@ -524,10 +523,10 @@ See LICENSE file for details.
 - [Skills Index](./skills/SKILLS-INDEX.md)
 - [3D/VFX Agents](./mandatory_docs/3d-vfx-agents-overview.md)
 - [Skills Integration Guide](./mandatory_docs/skills-integration-guide.md)
-- [MCP Configuration](./.qwen/MCP-CONFIG.md)
+- [MCP Configuration](./.dev_notes/MCP-CONFIG.md)
 
 ---
 
-**Version:** 0.3.1 | **Agents:** 26 | **Skills:** 43 | **MCP Servers:** 10 | **Last Updated:** 2026-03-13
+**Version:** 0.4.0 | **Agents:** 28 | **Skills:** 45 | **MCP Servers:** 10 | **Last Updated:** 2026-03-27
 
 **Made with ❤️ by Dream Pixels Forge**
