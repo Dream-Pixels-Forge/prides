@@ -1,0 +1,69 @@
+{
+  "name": "prides",
+  "version": "0.4.0",
+  "contextFileName": "QWEN.md",
+  "commands": "commands/prides",
+  "skills": "skills",
+  "agents": "agents",
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./"],
+      "description": "File system operations for reading, writing, and managing files"
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "description": "Git operations for version control and repository management"
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_SEARCH_API_KEY}"
+      },
+      "description": "Web search via Brave API"
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "description": "Browser automation with Puppeteer"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-playwright"],
+      "description": "E2E testing and browser automation with Playwright"
+    },
+    "chrome-dev-tools": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-chrome-dev-tools"],
+      "description": "Chrome DevTools protocol for browser debugging and automation"
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "description": "Persistent memory for conversation context"
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "description": "HTTP requests and web fetching"
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-notion"],
+      "env": {
+        "NOTION_API_TOKEN": "${NOTION_API_TOKEN}"
+      },
+      "description": "Notion workspace integration"
+    },
+    "image-editing": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-image-editor"],
+      "description": "Image editing and manipulation"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+---
+name: debug-issue
+description: Debug and diagnose issues with root cause analysis and fix recommendations. Use {{args}} to describe the issue or provide error messages/logs.
+---
+
+# Issue Debugging and Diagnosis
+
+**Issue Description:** {{args}}
+
+## Instructions
+
+Execute systematic debugging and diagnosis to identify root cause and implement fixes.
+
+### Phase 1: Issue Analysis
+
+1. `@debugger-sagent`: Initial issue assessment
+   - Reproduce the issue (if possible)
+   - Collect error messages and stack traces
+   - Identify affected components
+   - Determine issue severity
+
+2. **Information Gathering**
+   - Read relevant log files
+   - Check recent commits
+   - Review error tracking (Sentry, etc.)
+   - Collect user reports if available
+
+### Phase 2: Root Cause Analysis
+
+1. `@debugger-sagent`: Deep dive analysis
+   - Trace execution flow
+   - Identify failing code paths
+   - Check for race conditions
+   - Analyze data flow issues
+
+2. **Analysis Categories**
+   - **Logic Errors**: Incorrect algorithms, conditions
+   - **Data Issues**: Invalid input, state corruption
+   - **Integration Issues**: API failures, service outages
+   - **Performance Issues**: Memory leaks, slow queries
+   - **Environment Issues**: Config problems, dependencies
+
+### Phase 3: Fix Implementation
+
+1. `@debugger-sagent`: Propose fix strategy
+   - Immediate workaround (if needed)
+   - Proper long-term fix
+   - Risk assessment
+
+2. @coder-sagent: Implement fix
+
+### Phase 4: Validation
+
+1. `@testing-sagent`: Run regression tests
+   - Test the specific issue
+   - Run related test suites
+   - Verify no regressions
+
+### Debug Tools Available
+
+Instruct agents to use these tools for debugging:
+
+| Tool | Purpose | Instructions |
+|------|---------|--------------|
+| **Console Logs** | Runtime debugging | Ask agent to read: `logs/app.log` or run `cat logs/app.log` |
+| **Git Diff** | Recent changes | Ask agent to run: `git diff HEAD~5` |
+| **Dependency Check** | Version issues | Ask agent to run: `npm outdated` |
+| **Type Check** | Type errors | Ask agent to run: `tsc --noEmit` |
+| **Lint** | Code issues | Ask agent to run: `npm run lint` |
+
+### Documentation
+
+1. `@documentation-sagent`: Create bug report
+
+## Output
+
+Provide comprehensive debug report:
+
+- Issue summary
+- Root cause identified
+- Components affected
+- Fix implemented
+- Tests added
+- Deployment status
+- Prevention recommendations
